@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <TextView
+            android:id="@+id/tvXScore"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:gravity="center_vertical|left"
+            android:text="00"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="35"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvClock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="00:00"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/tvShotClock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text=":00"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvYScore"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="35"
+            android:gravity="right|fill_vertical"
+            android:text="00"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+
+    <ViewFlipper
+        android:id="@+id/vf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+
+            android:weightSum="100">
+
+
+            <ScrollView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:id="@+id/rgTeamX"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="50">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+
+                            <ProgressBar
+                                android:id="@+id/pbfX1"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="60"
+                                android:indeterminate="false"
+                                android:max="5"
+                                android:progress="0"
+                                android:rotation="180" />
+
+                            <Button
+                                android:id="@+id/rbX1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="40"
+                                android:checked="false"
+                                android:gravity="right|fill_vertical"
+                                android:text="X1" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+
+                            <ProgressBar
+                                android:id="@+id/pbfX2"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="60"
+                                android:indeterminate="false"
+                                android:max="5"
+                                android:progress="0"
+                                android:rotation="180" />
+
+                            <Button
+                                android:id="@+id/rbX2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="40"
+                                android:checked="false"
+                                android:gravity="right|fill_vertical"
+                                android:text="X2" />
+
+
+                        </LinearLayout>
+                        s
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+
+                            <ProgressBar
+                                android:id="@+id/pbfX3"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="60"
+                                android:indeterminate="false"
+                                android:max="5"
+                                android:progress="0"
+                                android:rotation="180" />
+
+                            <Button
+                                android:id="@+id/rbX3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="40"
+                                android:checked="false"
+                                android:gravity="right|fill_vertical"
+                                android:text="Y3" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+
+                            <ProgressBar
+                                android:id="@+id/pbfX4"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="60"
+                                android:indeterminate="false"
+                                android:max="5"
+                                android:progress="0"
+                                android:rotation="180" />
+
+                            <Button
+                                android:id="@+id/rbX4"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="40"
+                                android:checked="false"
+                                android:gravity="right|fill_vertical"
+                                android:text="Y4" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+
+                            <ProgressBar
+                                android:id="@+id/pbfX5"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="60"
+                                android:indeterminate="false"
+                                android:max="5"
+                                android:progress="0"
+                                android:rotation="180" />
+
+                            <Button
+                                android:id="@+id/rbX5"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="40"
+                                android:checked="false"
+                                android:gravity="right|fill_vertical"
+                                android:text="Y5" />
+
+
+                        </LinearLayout>
+                    </RadioGroup>
+                </LinearLayout>
+            </ScrollView>
+
+
+            <ScrollView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:id="@+id/rgTeamY"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="50">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+
+                            <Button
+                                android:id="@+id/rbY1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="40"
+                                android:checked="false"
+                                android:gravity="left|fill_vertical"
+                                android:text="Y1" />
+
+                            <ProgressBar
+                                android:id="@+id/pbfY1"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="60"
+                                android:indeterminate="false"
+                                android:max="5"
+                                android:progress="0" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+
+                            <Button
+                                android:id="@+id/rbY2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="40"
+                                android:checked="false"
+                                android:gravity="left|fill_vertical"
+                                android:text="Y2" />
+
+                            <ProgressBar
+                                android:id="@+id/pbfY2"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="60"
+                                android:indeterminate="false"
+                                android:max="5"
+                                android:progress="0" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+
+                            <Button
+                                android:id="@+id/rbY3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="40"
+                                android:checked="false"
+                                android:gravity="left|fill_vertical"
+                                android:text="Y3" />
+
+                            <ProgressBar
+                                android:id="@+id/pbfY3"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="60"
+                                android:indeterminate="false"
+                                android:max="5"
+                                android:progress="0" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+
+                            <Button
+                                android:id="@+id/rbY4"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="40"
+                                android:checked="false"
+                                android:gravity="left|fill_vertical"
+                                android:text="Y4" />
+
+                            <ProgressBar
+                                android:id="@+id/pbfY4"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="60"
+                                android:indeterminate="false"
+                                android:max="5"
+                                android:progress="0" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+
+                            <Button
+                                android:id="@+id/rbY5"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="40"
+                                android:checked="false"
+                                android:gravity="left|fill_vertical"
+                                android:text="Y5" />
+
+                            <ProgressBar
+                                android:id="@+id/pbfY5"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="60"
+                                android:indeterminate="false"
+                                android:max="5"
+                                android:progress="0" />
+                        </LinearLayout>
+                    </RadioGroup>
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnZSubs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:text="Substitute" />
+
+            <Button
+                android:id="@+id/btnZTimeOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:text="TimeOut" />
+
+
+            <Button
+                android:id="@+id/btnZ2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:text="+2" />
+
+            <Button
+                android:id="@+id/btnZ3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:text="+3" />
+
+            <Button
+                android:id="@+id/btnZFoul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:text="Foul" />
+
+
+        </LinearLayout>
+
+    </ViewFlipper>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+
+        <ProgressBar
+            android:id="@+id/pbXFoul"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:paddingLeft="20dp"
+            android:rotation="180" />
+
+        <ProgressBar
+            android:id="@+id/pbYFoul"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:paddingLeft="20dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnZStopClock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:text="Start Clock" />
+</LinearLayout>
